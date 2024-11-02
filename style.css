@@ -1,0 +1,35 @@
+ /* 
+    Theme Name: My custom theme
+    Description: A custom theme for learning purposes.
+    Version: 1.0
+    Author: Fazal Wahid
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+aside {
+    background: #f4f4f4;
+    padding: 15px;
+    margin-top: 20px;
+}
