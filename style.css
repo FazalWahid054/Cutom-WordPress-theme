@@ -39,7 +39,7 @@ nav {
     padding: 10px;
 }
 
-nav ul {
+nav>ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -48,16 +48,17 @@ nav ul {
 
 nav ul li {
     margin-right: 20px;
+    position: relative;
 }
 
-nav ul li a {
+nav ul>li a {
     color: white;
     text-decoration: none;
     padding: 5px 10px;
     transition: background-color 0.3s;
 }
 
-nav ul li a:hover {
+nav ul>li a:hover {
     background-color: #555;
 }
 
@@ -65,3 +66,57 @@ nav ul li a:hover {
         width: 50%;
         height: 500px;
 }
+.sub-menu {
+    display: none; /
+    position: absolute;
+    background-color: #444; 
+    padding: 0; 
+    margin: 0; 
+    list-style-type: none; 
+    z-index: 1000; 
+}
+
+nav ul li:hover .sub-menu {
+    display: block; 
+}
+
+.sub-menu li {
+    width: 100%; 
+}
+
+.sub-menu a {
+    padding: 10px; 
+    color: white; 
+}
+
+.sub-menu a:hover {
+    background-color: #555; 
+}
+.content-wrapper {
+    display: flex; 
+}
+main {
+    flex: 1; 
+    padding: 20px; 
+}
+
+.widget-area {
+    width: 300px; 
+    margin-left: 20px; 
+}
+
+.widget {
+    background: #f4f4f4; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+}
+
+.custom-post {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+

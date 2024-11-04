@@ -18,4 +18,14 @@
         add_theme_support('post-thumbnails'); //enble featured image
     }
     add_action('after_setup_theme', 'my_theme_setup');
+
+function my_theme_widgets_init() {
+    register_sidebar(array(
+        'name'          => __('Main Sidebar', 'my-custom-theme'),
+        'id'            => 'main-sidebar',
+    ));
+}
+add_action('widgets_init', 'my_theme_widgets_init');
+
+add_theme_support('custom-background');
 ?>
